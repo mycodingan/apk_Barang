@@ -1,4 +1,6 @@
 # apk_Barang
+Ini project saya Memmbuat crud menggunakan laravel
+ 
  ini apk iventory 
 ![Screenshot (40)](https://github.com/mycodingan/apk_Barang/assets/120147794/f569ca64-ee2b-4a3d-8d3a-35f87e74e0c8)
 ini tampilan awal
