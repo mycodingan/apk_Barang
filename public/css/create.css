@@ -1,0 +1,127 @@
+                body {
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        margin-top: 20px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: none;
+      }
+
+      .card-header {
+        background-color: #007bff;
+        color: #9fecff;
+      }
+
+      .card-header h4 {
+        margin-bottom: 0;
+      }
+
+      .gambarInventori {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .form-control {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .gambarInventori {
+          max-height: 150px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .card {
+          margin-bottom: 20px;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .card-body {
+        animation: fadeIn 5s;
+      }
+
+      @media (max-width: 576px) {
+        .form-group {
+          margin-bottom: 20px;
+        }
+      }
+.corupsi{
+    background-image: url( '../images/background.png');
+    background-size: cover,contain  ;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    border-radius: 30px 25px 30px 25px ;
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .corupsi {
+    border: 2px solid #69dbfa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(26, 123, 172, 0.2);
+    transition: border-color 0.9s ease-in-out;
+  }
+
+  .corupsi:hover {
+    border-color: #9fdff6;
+  }
+
+  .col {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+
+
+  .btn-danger.merah {
+    background-color: #575757;
+    color: #fff;
+  }
+
+  .btn-primary.biru {
+    background-color: #76afec;
+    color: #fff;
+  }
+  .cartu{
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  @media (max-width: 768px) {
+    .cartu {
+        background-image: url('../images/bg-mobile.png');
+    }
+}

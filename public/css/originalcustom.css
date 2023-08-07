@@ -1,0 +1,76 @@
+.btn-tambahData {
+    float: right;
+    width: 200px;
+    margin: 25px;
+}
+
+.container_konten {
+    padding: 20px;
+}
+
+.bagianMenu {
+    margin-top: 15px;
+}
+
+.gambarInventori {
+    height: 250px;
+    object-fit: cover;
+}
+
+.rincian_inventori {
+    width: 80%;
+    margin-top: 20px;
+}
+.bagianPenyimpanan {
+    margin: 10px;
+    padding: 10px;
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    border-radius: 12px;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+.btn-tambahData {
+    transition: transform 0.2s ease;
+}
+
+.btn-tambahData:hover {
+    transform: scale(1.1);
+}
+
+.row-cols-md-4 > .col {
+    margin-bottom: 20px;
+}
+
+.nav-tabs {
+    background-color: #f7f7f7;
+}
+
+.nav-link.active {
+    background-color: transparent;
+    color: #a0a0a0;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #b0d2e7;
+    color: #fff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 10px;
+}
+

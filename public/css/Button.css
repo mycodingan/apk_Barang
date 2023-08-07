@@ -1,0 +1,139 @@
+.tambahData {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: background-size 0.3s, width 0.3s;
+}
+
+@media (max-width: 600px) {
+    .tambahData {
+        width: 150px;
+    }
+}
+
+.tambahData:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #50e5ff66;
+    }
+
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+.merah {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .merah .shadow,
+  .biru .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+  }
+
+  .merah .edge,
+  .biru .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+      to left,
+      hsl(340deg 100% 16%) 0%,
+      hsl(340deg 100% 32%) 8%,
+      hsl(340deg 100% 32%) 92%,
+      hsl(340deg 100% 16%) 100%
+    );
+  }
+
+  .merah .front,
+  .biru .front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: hsl(0, 0%, 100%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+  }
+
+  .merah:hover,
+  .biru:hover {
+    filter: brightness(110%);
+  }
+
+  .merah:hover .front,
+  .biru:hover .front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+  }
+
+  .merah:active .front,
+  .biru:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+
+  .merah:hover .shadow,
+  .biru:hover .shadow {
+    transform: translateY(4px);
+    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+  }
+
+  .merah:active .shadow,
+  .biru:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+
+  .merah:focus:not(:focus-visible),
+  .biru:focus:not(:focus-visible) {
+    outline: none;
+  }
